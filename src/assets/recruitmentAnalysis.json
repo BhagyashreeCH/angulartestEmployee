@@ -1,0 +1,56 @@
+[
+    {
+        "employeeName":"Bhagyashree",
+        "interviewerName" : "ramesh",
+        "rating" : 4
+    },
+    {
+        "employeeName":"Bhagyashree",
+        "interviewerName" : "girish",
+        "rating" : 3
+    },
+    {
+        
+        "employeeName":"praveen",
+        "interviewerName" : "girish",
+        "rating" : 4
+    },
+    {
+        
+        "employeeName":"Bhagyashree",
+        "interviewerName" : "umesh",
+        "rating" : 5
+    },
+    {
+        
+        "employeeName":"praveen",
+        "interviewerName" : "umesh",
+        "rating" : 4.5
+    },
+    {
+        
+        "employeeName":"praveen",
+        "interviewerName" : "mahesh",
+        "rating" : 4.5
+    },
+    {
+        
+        "employeeName":"satish",
+        "interviewerName" : "umesh",
+        "rating" : 4
+    },
+    {
+        
+        "employeeName":"Satish",
+        "interviewerName" : "prakash",
+        "rating" : 3.5
+    },
+    {
+        
+        "employeeName":"praveen",
+        "interviewerName" : "kalmesh",
+        "rating" : 3.5
+    }
+
+
+]

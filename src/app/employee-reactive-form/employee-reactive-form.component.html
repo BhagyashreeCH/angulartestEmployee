@@ -1,0 +1,44 @@
+<h2 >Employee Form: Model driven</h2>
+<form class="formClass" [formGroup]="formBuilderEmp" (ngSubmit)="formBuilderfunction()">
+<!-- {{formBuilderEmp.value | json}} -->
+
+<div>
+    <label>employeeName</label>
+    <input type="text"  name="employeeName" formControlName="employeeName"/>
+</div>
+<div>
+    <label>employeeSalary</label>
+    <input type="number" name="employeeSalary" formControlName="employeeSalary"/>
+</div>
+<div>
+    <label>employeeCompany</label>
+    <input type="text" name="employeeCompany" formControlName="employeeCompany"/>
+</div>
+<!-- <div>
+    <label>employeeGender</label>
+    <input type="radio" name="employeeGender" value="female" class="radio" formControlName="employeeGender"/>Female
+    <input type="radio" name="employeeGender" class="checkbox" value="male" formControlName="employeeGender" />Male
+</div> -->
+<div [formGroup]="personaldata">
+<div>
+    <label>employeeAge</label>
+    <input type="number" name="employeeAge" formControlName="employeeAge"/>
+    
+    <!-- <div *ngIf="age.errors && (age.invalid || age.touched)">
+        <span *ngIf="age.errors.pattern"> Enter 3 charecters </span>
+        <span *ngIf="age.errors.required && age.touched"> REquired field </span>
+    </div> -->
+    
+</div>
+<div>
+    <label>employeeMaritalStatus</label> 
+    <select name="employeeMaritalStatus" required class="dropbox" formControlName="employeeMaritalStatus">
+    <option type="radio" value="single">single</option>
+    <option type="radio" value="married">married</option>
+    </select>
+    <!-- <span *ngIf="status.touched && status.invalid">select any option</span> -->
+</div>
+</div>
+{{formBuilderEmp.form.invalid}}
+<button type="submit" [disabled]="formBuilderEmp.form.invalid">submit</button>
+</form>

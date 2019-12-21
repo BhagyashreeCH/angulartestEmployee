@@ -1,0 +1,36 @@
+[
+    {
+        "employeeName":"Bhagyashree",
+        "employeeSalary" : "40000",
+        "employeeCompany" : "TCS",
+        "employeeGender" : "Female",
+        "employeeAge" : 28,
+        "employeeMaritalStatus":"single"
+    },
+    {
+        "employeeName":"Basalingayya",
+        "employeeSalary" : "60000",
+        "employeeCompany" : "Siemens",
+        "employeeGender" : "Male",
+        "employeeAge" : 28,
+        "employeeMaritalStatus":"single"
+    },
+    {
+        "employeeName":"Mahesh",
+        "employeeSalary" : "30000",
+        "employeeCompany" : "HCL",
+        "employeeGender" : "Male",
+        "employeeAge" : 25,
+        "employeeMaritalStatus":"single"
+    },
+    {
+        "employeeName":"Prashanth",
+        "employeeSalary" : "30000",
+        "employeeCompany" : "Incture",
+        "employeeGender" : "Male",
+        "employeeAge" : 25,
+        "employeeMaritalStatus":"single"
+    }
+
+
+]

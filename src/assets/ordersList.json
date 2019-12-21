@@ -1,0 +1,40 @@
+[
+    {
+        "employeeName":"Bhagyashree",
+        "orderItem" : "phone",
+        "OrderPrice" : 15000,
+        "orderNumber": 1
+    },
+    {
+        "employeeName":"Basalingayya",
+        "orderItem" : "phone",
+        "OrderPrice" : 40000,
+        "orderNumber": 2
+    },
+    {
+        "employeeName":"Mahesh",
+        "orderItem" : "phone",
+        "OrderPrice" : 16000,
+        "orderNumber": 3
+    },
+    {
+        "employeeName":"Prashanth",
+        "orderItem" : "phone",
+        "OrderPrice" : 17000,
+        "orderNumber": 4
+    },
+    {
+        "employeeName":"Prashanth",
+        "orderItem" : "bike",
+        "OrderPrice" : 90000,
+        "orderNumber": 5
+    },
+    {
+        "employeeName":"Mahesh",
+        "orderItem" : "scooty",
+        "OrderPrice" : "75000",
+        "orderNumber": 6
+    }
+
+
+]

@@ -1,0 +1,48 @@
+
+<h2 >Employee Form: template driven</h2>
+<form class="formClass" #templateEmployeeForm="ngForm" (ngSubmit)="templateFunc(templateEmployeeForm.value)">
+{{templateEmployeeForm.value | json}}
+<hr/>
+After model binding: {{emp | json}}
+<div>
+    <label>employeeName</label>
+    <input type="text" required #ename="ngModel" [class.in-valid]="ename.pristine && ename.touched" name="employeeName"  [(ngModel)]="emp.employeeName"/>
+</div>
+<div>
+    <label>employeeSalary</label>
+    <input type="number"  name="employeeSalary" [(ngModel)]="emp.employeeSalary"/>
+</div>
+<div>
+    <label>employeeCompany</label>
+    <input type="text" name="employeeCompany" [(ngModel)]="emp.employeeCompany"/>
+</div>
+<div>
+    <label>employeeGender</label>
+    <input type="radio" name="employeeGender" value="female" class="radio" [(ngModel)]="emp.employeeGender"/>Female
+    <input type="radio" name="employeeGender" class="checkbox" value="male" [(ngModel)]="emp.employeeGender" />Male
+    
+</div>
+<div ngModelGroup="personaldata">
+<div>
+    <label>employeeAge</label>
+    <input type="number" required #age="ngModel" pattern="^\d{3}$" name="employeeAge"
+     [(ngModel)]="emp.employeeAge"/>
+    IsDirty : {{age.dirty}}
+    
+    <div *ngIf="age.errors && (age.invalid || age.touched)">
+        <span *ngIf="age.errors.pattern"> Enter 3 charecters </span>
+        <span *ngIf="age.errors.required && age.touched"> REquired field </span>
+    </div>
+    
+</div>
+<div>
+    <label>employeeMaritalStatus</label> 
+    <select name="employeeMaritalStatus" required class="dropbox"  #status="ngModel" [(ngModel)]="emp.employeeMaritalStatus">
+    <option type="radio" value="single">single</option>
+    <option type="radio" value="married">married</option>
+    </select>
+    <span *ngIf="status.touched && status.invalid">select any option</span>
+</div>
+</div>
+<button type="submit" [disabled]="templateEmployeeForm.form.invalid">submit</button>
+</form>

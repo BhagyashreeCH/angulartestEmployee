@@ -1,0 +1,4 @@
+<ul *ngFor="let emp of employee">
+    <li><b>Name:</b> {{emp.employeeName | employeePrefixUpdate:emp.employeeGender: emp.employeeMaritalStatus}}, 
+        <p appAddChildElement><b>Company:</b> {{emp.employeeCompany}} </p></li>
+</ul>
